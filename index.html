@@ -11,7 +11,12 @@
   <body>
     <div class="container">
       <header class="header">
-        <a class="header-logo" href="#"><img src="img/logo/logo-header.svg" width="145" height="36" alt="Логотип"></a>
+        <div class="wrapper-header-logo">
+          <a class="header-logo" href="#">
+            <img src="img/logo/logo-main.svg" width="145" height="36" alt="Логотип">
+          </a>
+        </div>
+        
         <!-- Навигация -->
         <nav class="navigation">
           <!-- Кнопки навигации -->
@@ -54,14 +59,14 @@
         </nav>
       </header>
       <!-- Главная страница -->
-      <main class="page-main">
+      <main class="page-main main-container">
         <!-- Заголовок сайта -->
         <h1 class="visually-hidden">Интернет магазин Device</h1>
         <!-- Слайдер -->
         <section class="slider">
           <h2 class="visually-hidden">Слайдер товаров</h2>
           <div class="slider-preview">
-            <img class="preview-img" src="img/slider/quadcopter.jpg" width="560" height="560" alt="Квадрокоптер">
+            <img class="preview-img" src="img/slider/slider-1.jpg" width="560" height="560" alt="Квадрокоптер">
             <div class="preview-content">
               <h3 class="preview-title">Порхает как бабочка, жалит как пчела!</h3>
               <p class="preview-text">
@@ -80,7 +85,7 @@
             </div>
           </div>
           <div class="slider-preview">
-            <img class="preview-image" src="img/slider/bracelet.jpg"  width="560" height="560" alt="Фитнес-браслет">
+            <img class="preview-image" src="img/slider/slider-2.jpg"  width="560" height="560" alt="Фитнес-браслет">
             <div class="preview-content">
               <h3 class="preview-title">Худеем правильно!</h3>
               <p class="preview-text">
@@ -95,7 +100,7 @@
             </div>
           </div>
           <div class="slider-preview">
-            <img class="preview-image" src="img/slider/stick.jpg"  width="560" height="560" alt="Палка для селфи">
+            <img class="preview-image" src="img/slider/slider-3.jpg"  width="560" height="560" alt="Палка для селфи">
             <div class="preview-content">
               <h3 class="preview-title">Делай селфи,как Бен Стиллер!</h3>
               <p class="preview-text">
@@ -195,13 +200,13 @@
               ваш этаж.
             </p>
           </div>
-          <img class="services-img" src="img/men.svg" width="136" height="164"  alt="Доставка">
+          <img class="services-img" src="img/icon/man.svg" width="136" height="164"  alt="Доставка">
         </section>
         <!-- Контакты -->
         <section class="more">
           <div class="more-delivery">
             <div class="wrapper-delivery-img">
-              <img class="delivery-img" src="img/delivery.svg" width="47" height="31" alt="Доставка">
+              <img class="delivery-img" src="img/icon/delivery.svg" width="47" height="31" alt="Доставка">
             </div>
             <div class="wrapper-delivery-description">
               <p class="delivery-description">Доставим редкий товар под заказ</p>
@@ -285,9 +290,10 @@
         <div class="container">
           <div class="wrapper-footer-logo">
             <a class="footer-logo" href="">
-              <img src="img/logo/logo-footer.svg" width="145" height="36" alt="Логотип">
+              <img src="img/logo/logo-main.svg" width="145" height="36" alt="Логотип">
             </a>
           </div>
+          
           <div class="footer-row">
             <div class="footer-address">
               <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
@@ -301,23 +307,27 @@
               <p>Тел.: +7 (812) 812-12-12</p>
             </div>
           </div>
-          <div class="footer-social">
-            <div class="footer-social-list">
-              <a class="footer-social-item" href="https://www.facebook.com/htmlacademy/">
-                <img src="img/footer/facebook.svg" alt="facebook">
-              </a>
-              <a class="footer-social-item" href="https://www.instagram.com/htmlacademy/?hl=ru">
-                <img src="img/footer/instagram.svg" alt="insta">
-              </a>
-              <a class="footer-social-item" href="#">
-                <img src="img/footer/twitter.svg" alt="twiter">
+          <div class="wrapper-footer-social">
+            <div class="divider"></div>
+            <div class="footer-social">
+              <div class="footer-social-list">
+                <a class="footer-social-item" href="https://www.facebook.com/htmlacademy/">
+                  <img src="img/footer/facebook.svg" alt="facebook">
+                </a>
+                <a class="footer-social-item" href="https://www.instagram.com/htmlacademy/?hl=ru">
+                  <img src="img/footer/instagram.svg" alt="insta">
+                </a>
+                <a class="footer-social-item" href="#">
+                  <img src="img/footer/twitter.svg" alt="twiter">
+                </a>
+              </div>
+              <a class="footer-icon" href="https://twitter.com/htmlacademy_ru">
+                <img  width="115" height="34"  src="img/logo/logo-academy.svg" alt="logo">
               </a>
             </div>
-            <a class="footer-icon" href="https://twitter.com/htmlacademy_ru">
-              <img src="img/footer/logo-academy.svg" alt="logo">
-            </a>
-          </div>
 
+          </div>
+         
         </div>
        
       </footer>
