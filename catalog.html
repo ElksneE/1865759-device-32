@@ -19,56 +19,53 @@
       <div class="header-inner">
         <div class="wrapper-header-logo">
           <a class="header-logo" href="#">
-            <img
-              src="img/logo/logo-main.svg"
-              width="145"
-              height="36"
-              alt="Логотип"
-            />
-          </a>
-        </div>
-        <!-- Навигация -->
+                  <img src="img/logo/logo-main.svg" width="145" height="36" alt="Логотип">
+                </a>
+        </div> 
+              <!-- Навигация -->
         <nav class="navigation">
-          <!-- Кнопки навигации -->
-          <ul class="navigation-list">
-            <li class="navigation-item">
-              <form action="">
-                <img src="img/icon/search.svg" alt="Поиск" />
-                <label class="visually-hidden" for="search">Поиск</label>
-                <input type="search" id="search" placeholder="Поиск по сайту" name="search"
-                />
-              </form>
-            </li>
-            <li class="navigation-item">
-              <img src="img/icon/user.svg" alt="Войти" />
-              <input type="submit" value="Войти" />
-            </li>
-            <li class="navigation-item">
-              <img src="img/icon/compare.svg" alt="Сравнить" />
-              <a class="navigation-link" href="#">Сравнить</a>
-            </li>
-            <li class="navigation-item">
-              <img src="img/icon/basket.svg" alt="Корзина" />
-              <a class="navigation-link" href="#">Корзина</a>
-            </li>
-          </ul>
-          <!-- Список навигации -->
-          <ul class="navigation-list">
-            <li class="navigation-item">
-              <a class="navigation-link" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="delivery.html">Доставка</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="warranty.html">Гарантия</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="contacts.html">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+                <!-- Кнопки навигации -->
+                <ul class="navigation-user">
+                  <li class="navigation-item-search">
+                    <form action="">
+                      <img src="img/icon/search.svg" alt="Поиск">
+                      <label class="visually-hidden" for="search">Поиск</label>
+                    <input type="search" id="search" placeholder="Поиск по сайту" name="search"/>
+                    </form>
+                  </li>
+                <li class="navigation-item-login">
+                  <img src="img/icon/user.svg" alt="Войти">
+                  <input type="submit" value="Коля Петухов">
+                  <input type="submit" value="Выйти">
+                </li>
+                <li class="navigation-item-compare">
+                  <img src="img/icon/compare.svg" alt="Сравнить">
+                  <a class="navigation-link" href="#">Сравнить</a>
+                </li>
+                <li class="navigation-item-cart">
+                  <img src="img/icon/basket.svg" alt="Корзина">
+                  <a class="navigation-link" href="#">Корзина</a>
+                </li>
+              </ul>
+              <!-- Список навигации -->
+              <ul class="navigation-list">
+                <li class="navigation-item-catalog">
+                  <a class="navigation-link" href="catalog.html">Каталог товаров</a>
+                </li>
+                <li class="navigation-item-delivery">
+                  <a class="navigation-item navigation-link" href="delivery.html">Доставка</a>
+                </li>
+                <li class="navigation-item-warranty">
+                  <a class="navigation-link" href="warranty.html">Гарантия</a>
+                </li>
+                <li class="navigation-item-contacts">
+                  <a class="navigation-link" href="contacts.html">Контакты</a>
+                </li>
+              </ul>
+        </nav> 
+
       </div>
+      
     </header>
     <!-- Cтраница каталога -->
     <main class="main-inner main-container">
@@ -83,7 +80,7 @@
               <a class="breadcrumbs-link" href="#">Каталог товаров</a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="">Моноподы для селфи</a>
+              <a class="breadcrumbs-link">Моноподы для селфи</a>
             </li>
           </ul>
         </header>
@@ -212,7 +209,7 @@
                  <!-- Блок с сортировкой -->
             <div class="wrapper-sorting-type">
               <form class="sorting-type">
-                <label class="sorting-title" for="sorting">Сортировка</label>
+                <label class="sorting-title" for="sorting">Сортировка:</label>
                 <select class="select-control" id="sorting" name="sorting">
                   <option value="popular">Сначала популярное</option>
                   <option value="cheap">Сначала дешёвое</option>
@@ -286,32 +283,32 @@
                   <button class="pagination-show-more" type="button">
                     Загрузить ещё
                   </button>
-                  <ul class="pagination">
-                    <li class="pagination-item">
-                      <a
-                        class="
-                          pagination-link pagination-prev pagination-disabled
-                        "
-                      >
+                 
+                  <div class="pagination">
+                    <button class="pagination-button">
+                      <a class="pagination-link pagination-prev pagination-disabled">
                         <span class="pagination-button">Назад</span>
                       </a>
-                    </li>
-                    <li class="pagination-item">
-                      <a class="pagination-link pagination-current">1</a>
-                    </li>
-                    <li class="pagination-item">
-                      <a class="pagination-link" href="#">2</a>
-                    </li>
-                    <li class="pagination-item">
-                      <a class="pagination-link" href="#">3</a>
-                    </li>
-
-                    <li class="pagination-item">
+                    </button>
+                    <ul class="pagination-list">
+                      <li class="pagination-item">
+                        <a class="pagination-link pagination-current">1</a>
+                      </li>
+                      <li class="pagination-item">
+                        <a class="pagination-link" href="#">2</a>
+                      </li>
+                      <li class="pagination-item">
+                        <a class="pagination-link" href="#">3</a>
+                      </li>
+                    </ul>
+                    <button class="pagination-button">
                       <a class="pagination-link pagination-next" href="#">
                         <span class="pagination-button">Вперед</span>
                       </a>
-                    </li>
-                  </ul>
+                    </button>
+                    
+                  </div>
+                  
                 </div>
               </div>
            

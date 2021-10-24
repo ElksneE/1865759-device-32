@@ -19,39 +19,39 @@
                 <!-- Навигация -->
           <nav class="navigation">
                   <!-- Кнопки навигации -->
-                  <ul class="navigation-list">
-                    <li class="navigation-item">
+                  <ul class="navigation-user">
+                    <li class="navigation-item-search">
                       <form action="">
                         <img src="img/icon/search.svg" alt="Поиск">
                         <label class="visually-hidden" for="search">Поиск</label>
                       <input type="search" id="search" placeholder="Поиск по сайту" name="search"/>
                       </form>
                     </li>
-                  <li class="navigation-item">
+                  <li class="navigation-item-login">
                     <img src="img/icon/user.svg" alt="Войти">
                     <input type="submit" value="Войти">
                   </li>
-                  <li class="navigation-item">
+                  <li class="navigation-item-compare">
                     <img src="img/icon/compare.svg" alt="Сравнить">
                     <a class="navigation-link" href="#">Сравнить</a>
                   </li>
-                  <li class="navigation-item">
+                  <li class="navigation-item-cart">
                     <img src="img/icon/basket.svg" alt="Корзина">
                     <a class="navigation-link" href="#">Корзина</a>
                   </li>
                 </ul>
                 <!-- Список навигации -->
                 <ul class="navigation-list">
-                  <li class="navigation-item">
+                  <li class="navigation-item-catalog">
                     <a class="navigation-link" href="catalog.html">Каталог товаров</a>
                   </li>
-                  <li class="navigation-item">
-                    <a class="navigation-link" href="delivery.html">Доставка</a>
+                  <li class="navigation-item-delivery">
+                    <a class="navigation-item navigation-link" href="delivery.html">Доставка</a>
                   </li>
-                  <li class="navigation-item">
+                  <li class="navigation-item-warranty">
                     <a class="navigation-link" href="warranty.html">Гарантия</a>
                   </li>
-                  <li class="navigation-item">
+                  <li class="navigation-item-contacts">
                     <a class="navigation-link" href="contacts.html">Контакты</a>
                   </li>
                 </ul>
@@ -72,7 +72,7 @@
             <!-- Слайдер-1 -->
             <div class="slider-preview">
               <div class="wrapper-preview-img">
-                <img class="preview-img" src="img/slider/slider-1.jpg" width="560" height="560" alt="Квадрокоптер">
+                <img class="preview-img" src="img/slider/slider-1.png" width="560" height="560" alt="Квадрокоптер">
               </div>
               <div class="preview-content">
                 <h3 class="preview-title">Порхает как бабочка, жалит как пчела!</h3>
@@ -103,14 +103,13 @@
                     <p>Радиус поражения</p>
                   </div>
                 </div>
-               
               </div>
             </div>
   
             <!-- Слайдер-2 -->
             <div class="slider-preview">
               <div class="wrapper-preview-img">
-                <img class="preview-image" src="img/slider/slider-2.jpg"  width="560" height="560" alt="Фитнес-браслет">
+                <img class="preview-image" src="img/slider/slider-2.png"  width="560" height="560" alt="Фитнес-браслет">
               </div>            
               <div class="preview-content">
                 <h3 class="preview-title">Худеем правильно!</h3>
@@ -120,16 +119,6 @@
                 </p>
                 <div class="preview-button">
                   <a class="button" href="#">Подробнее</a>
-                  <div class="slider-navigation">
-                    <label for="radio1"></label>
-                    <label for="radio2"></label>
-                    <label for="radio3"></label>
-                  </div>
-                  <div class="slider-buttons">
-                    <input type="radio" name="slider" id="radio1">
-                    <input type="radio" name="slider" id="radio2" checked>
-                    <input type="radio" name="slider" id="radio3">
-                  </div>
                 </div>
                 <div class="wrapper-preview-advantages">
                   <div class="preview-advantages">
@@ -142,7 +131,7 @@
   
             <!-- Слайдер-3 -->
             <div class="slider-preview">
-              <img class="preview-image" src="img/slider/slider-3.jpg"  width="560" height="560" alt="Палка для селфи">
+              <img class="preview-image" src="img/slider/slider-3.png"  width="560" height="560" alt="Палка для селфи">
               <div class="preview-content">
                 <h3 class="preview-title">Делай селфи,как Бен Стиллер!</h3>
                 <p class="preview-text">
@@ -150,17 +139,7 @@
                   (Восемь, Карл!) метров длиной и весом всего 5 кг.
                 </p>
                 <div class="preview-button">
-                  <a  class="button" href="#">Подробнее</a>
-                  <div class="slider-navigation">
-                    <label for="radio1"></label>
-                    <label for="radio2"></label>
-                    <label for="radio3"></label>
-                  </div>
-                  <div class="slider-buttons">
-                    <input type="radio" name="slider" id="radio1">
-                    <input type="radio" name="slider" id="radio2">
-                    <input type="radio" name="slider" id="radio3" checked>
-                  </div>
+                  <a class="button" href="#">Подробнее</a>
                 </div>
                 <div class="wrapper-preview-advantages">
                   <div class="preview-advantages">
@@ -354,7 +333,7 @@
             </div>
            <div class="subscription-mail">
              <div class="wrapper-subscription-button">
-              <input type="email" name="e-mail" placeholder="Ваш e-mail" id="">
+              <input class="button-email"type="email" name="e-mail" placeholder="Ваш e-mail" id="">
               <input class="button" type="submit" value="Подписаться">
              </div>
             <div class="subscription-vector">
