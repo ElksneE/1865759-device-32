@@ -35,13 +35,14 @@
               <form class="navigation-link-search" action="">
                 <label class="visually-hidden" for="search">Поиск</label>
                 <input
-                  class="navigation-item-search"
+                  class="navigation-item-input"
                   type="search"
                   id="search"
                   placeholder="Поиск по сайту"
                   name="search"
                   required
                 />
+                <button class="navigation-item-search-button" type="submit">Найти</button>
               </form>
             </li>
             <li class="navigation-item-login">
@@ -142,8 +143,10 @@
                   Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
                   лазером, замаскированным под стандартную камеру.
                 </p>
-
-                <a class="button preview-button" href="#">Подробнее</a>
+                <div class="button-preview">
+                  <a class="button" href="#">Подробнее</a>
+                </div>
+               
                 <ol class="slider-pagination">
                   <li class="slider-pagination-item">
                     <button
@@ -210,9 +213,9 @@
                 Мотивирующие фитнес-браслеты помогут найти в себе силы не
                 пропускать занятия и соблюдать диету.
               </p>
-
-              <a class="button preview-button" href="#">Подробнее</a>
-
+              <div class="button-preview">
+                <a class="button" href="#">Подробнее</a>
+              </div>
               <div class="wrapper-preview-advantages">
                 <div class="preview-advantages">
                   <span>48 часов</span>
@@ -251,9 +254,9 @@
                 Самая длинная палка для селфи доступна в нашем магазине. Восемь
                 (Восемь, Карл!) метров длиной и весом всего 5 кг.
               </p>
-
-              <a class="button preview-button" href="#">Подробнее</a>
-
+              <div class="button-preview">
+                <a class="button" href="#">Подробнее</a>
+              </div>
               <div class="wrapper-preview-advantages">
                 <div class="preview-advantages">
                   <span>8,5 м</span>
@@ -277,9 +280,11 @@
         <div class="container">
           <h2 class="visually-hidden">Категории товаров</h2>
           <div class="wrapper-product-category">
-            <div class="product-category-card">
-              <h4 class="card-title">Виртуальная реальность</h4>
-              <div class="wrapper-card">
+
+
+            <div href="#" class="product-category-card">
+              
+              <a href="#" class="wrapper-card">
                 <img
                   class="card-img"
                   src="img/category/category-1.svg"
@@ -287,10 +292,14 @@
                   height="55"
                   alt="Виртуальная реальность"
                 />
-              </div>
+              </a>
+              <a href="" class="card-title">Виртуальная реальность</a>
             </div>
+
+
+
             <div class="product-category-card">
-              <div class="wrapper-card">
+              <a href="#" class="wrapper-card">
                 <img
                   class="card-img"
                   src="img/category/category-2.svg"
@@ -298,15 +307,13 @@
                   height="117"
                   alt="Моноподы для селфи"
                 />
-              </div>
-              <h4 class="card-title">
-                Моноподы <br />
-                для селфи
-              </h4>
+              </a>
+              <a href="#" class="card-title">Моноподы <br />для селфи </a>
             </div>
+
             <div class="product-category-card">
-              <h4 class="card-title">Экшн-камеры</h4>
-              <div class="wrapper-card">
+              
+              <a href="#" class="wrapper-card">
                 <img
                   class="card-img"
                   src="img/category/category-3.svg"
@@ -314,11 +321,13 @@
                   height="87"
                   alt="Экшн-камеры"
                 />
-              </div>
+              </a>
+              <a href="#" class="card-title">Экшн-камеры</a>
             </div>
+
             <div class="product-category-card">
-              <h4 class="card-title">Фитнес-браслеты</h4>
-              <div class="wrapper-card">
+              
+              <a href="#" class="wrapper-card">
                 <img
                   class="card-img"
                   src="img/category/category-4.svg"
@@ -326,11 +335,13 @@
                   height="65"
                   alt="Фитнес-браслет"
                 />
-              </div>
+              </a>
+              <a href="#" class="card-title">Фитнес-браслеты</a>
             </div>
+
             <div class="product-category-card">
-              <h4 class="card-title">Умные часы</h4>
-              <div class="wrapper-card">
+              
+              <a href="#" class="wrapper-card">
                 <img
                   class="card-img"
                   src="img/category/category-5.svg"
@@ -338,11 +349,13 @@
                   height="98"
                   alt="Умные часы"
                 />
-              </div>
+              </a>
+              <a href="#" class="card-title">Умные часы</a>
             </div>
+
             <div class="product-category-card">
-              <h4 class="card-title">Квадрокоптеры</h4>
-              <div class="wrapper-card">
+              
+              <a href="#" class="wrapper-card">
                 <img
                   class="card-img"
                   src="img/category/category-6.svg"
@@ -350,7 +363,8 @@
                   height="69"
                   alt="квадрокоптер"
                 />
-              </div>
+              </a>
+              <a href="#" class="card-title">Квадрокоптеры</a>
             </div>
           </div>
         </div>
@@ -360,11 +374,11 @@
         <div class="container">
           <div class="wrapper-services">
             <div class="services-inner">
-              <ul class="services-list">
-                <li class="services-item services-item-delivery">Доставка</li>
-                <li class="services-item services-item-warranty">Гарантия</li>
-                <li class="services-item services-item-credit">Кредит</li>
-              </ul>
+              <div class="services-list">
+                <a href="#" class="services-item services-item-current">Доставка</a>
+                <a href="#" class="services-item">Гарантия</a>
+                <a href="#"  class="services-item">Кредит</a>
+              </div>
             </div>
             <div class="services-content">
               <div class="content-title">
