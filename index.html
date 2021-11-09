@@ -13,9 +13,6 @@
       content="квадрокоптеры,моноподы,экшн-камеры,фитнес-браслеты,умные часы"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Rubik:wght@400;700;800&display=swap" rel="stylesheet"> -->
   </head>
   <body>
     <header class="header">
@@ -45,7 +42,9 @@
                   name="search"
                   required
                 />
-                <button class="navigation-item-search-button" type="submit">Найти</button>
+                <button class="navigation-item-search-button" type="submit">
+                  Найти
+                </button>
               </form>
             </li>
             <li class="navigation-item-login">
@@ -63,6 +62,41 @@
               <a class="navigation-link navigation-link-cart" href="#"
                 >Корзина</a
               >
+              <div class="popover popover-cart">
+                <div class="popover-content">
+                  <span class="visually-hidden">Корзина</span>
+                  <ul class="cart-items-list">
+                    <li class="cart-item">
+                      <img
+                        src="img/product/product-1.jpg"
+                        width="41"
+                        height="43"
+                        alt="Любительская селфи-палка"
+                      />
+                      <p class="cart-title">
+                        Любительская <br />
+                        селфи-палка
+                      </p>
+                    </li>
+                    <li class="cart-item">
+                      <img
+                        src="img/product/product-2.jpg"
+                        width="41"
+                        height="43"
+                        alt="Любительская селфи-палка"
+                      />
+                      <p class="cart-title">Профессиональная селфи-палка</p>
+                    </li>
+                  </ul>
+                  <div class="cart-total-amount">
+                    <div class="cart-total-count">Товаров: 2</div>
+                    <div class="cart-price">Сумма: 2000 ₽</div>
+                  </div>
+                </div>
+                <button class="popover-open-button button-light">
+                  Открыть корзину
+                </button>
+              </div>
             </li>
           </ul>
           <!-- Список навигации -->
@@ -74,7 +108,7 @@
                 target="_blank"
                 >Каталог товаров</a
               >
-              <ul class="navigation-subcatalog">
+              <!-- <ul class="navigation-subcatalog">
                 <li><a href="">Виртуальная реальность</a></li>
                 <li><a href="">Моноподы для селфи</a></li>
                 <li><a href="">Экшн-камеры</a></li>
@@ -82,7 +116,9 @@
                 <li><a href="">Умные часы</a></li>
                 <li><a href="">Квадрокоптеры</a></li>
               </ul>
+            </li> -->
             </li>
+
             <li class="navigation-item-delivery">
               <a
                 class="navigation-link navigation-link-delivery"
@@ -149,7 +185,7 @@
                 <div class="button-preview">
                   <a class="button" href="#">Подробнее</a>
                 </div>
-               
+
                 <ol class="slider-pagination">
                   <li class="slider-pagination-item">
                     <button
@@ -283,10 +319,7 @@
         <div class="container">
           <h2 class="visually-hidden">Категории товаров</h2>
           <div class="wrapper-product-category">
-
-
             <div href="#" class="product-category-card">
-              
               <a href="#" class="wrapper-card">
                 <img
                   class="card-img"
@@ -298,8 +331,6 @@
               </a>
               <a href="" class="card-title">Виртуальная реальность</a>
             </div>
-
-
 
             <div class="product-category-card">
               <a href="#" class="wrapper-card">
@@ -315,7 +346,6 @@
             </div>
 
             <div class="product-category-card">
-              
               <a href="#" class="wrapper-card">
                 <img
                   class="card-img"
@@ -329,7 +359,6 @@
             </div>
 
             <div class="product-category-card">
-              
               <a href="#" class="wrapper-card">
                 <img
                   class="card-img"
@@ -343,7 +372,6 @@
             </div>
 
             <div class="product-category-card">
-              
               <a href="#" class="wrapper-card">
                 <img
                   class="card-img"
@@ -357,7 +385,6 @@
             </div>
 
             <div class="product-category-card">
-              
               <a href="#" class="wrapper-card">
                 <img
                   class="card-img"
@@ -378,9 +405,11 @@
           <div class="wrapper-services">
             <div class="services-inner">
               <div class="services-list">
-                <a href="#" class="services-item services-item-current">Доставка</a>
+                <a href="#" class="services-item services-item-current"
+                  >Доставка</a
+                >
                 <a href="#" class="services-item">Гарантия</a>
-                <a href="#"  class="services-item">Кредит</a>
+                <a href="#" class="services-item">Кредит</a>
               </div>
             </div>
             <div class="services-content">
@@ -449,7 +478,7 @@
                 <li class="about-item">ТоксБерри</li>
               </ul>
               <div class="more-button">
-                <a class="button" href="#">Подробнее о нас</a>
+                <a href="#" class="button">Подробнее о нас</a>
               </div>
             </div>
             <div class="more-contact">
@@ -477,7 +506,7 @@
                 </p>
               </div>
               <div class="contact-button">
-                <a class="button" href="#">Напишите нам</a>
+                <a href="#" class="button">Напишите нам</a>
               </div>
             </div>
           </div>
@@ -512,9 +541,8 @@
                 value="Подписаться"
                 required
               />
-
             </form>
-            
+
             <div class="subscription-vector">
               <p>Это бесплатно</p>
             </div>
@@ -631,5 +659,71 @@
         </div>
       </div>
     </footer>
+    <div class="modal-container">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Доставка под заказ</h2>
+
+          <form
+            class="auth-form"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
+            <div class="form-group-row">
+              <p class="field-group">
+                <label class="auth-form-title" for="auth-login"
+                  >Ваше имя:</label
+                >
+                <input
+                  class="auth-form-field auth-form-field-login"
+                  type="text"
+                  id="auth-login"
+                  name="auth-login"
+                  placeholder="Имя Фамилия"
+                />
+              </p>
+              <p class="field-group">
+                <label class="auth-form-title" for="auth-email"
+                  >Ваш e-mail:</label
+                >
+                <input
+                  class="auth-form-field auth-form-field-email"
+                  type="mail"
+                  id="auth-email"
+                  name="auth-email"
+                  placeholder="Введите e-mail"
+                />
+              </p>
+            </div>
+            <div class="form-group-row">
+              <p class="field-group">
+                <label class="auth-form-title" for="auth-products"
+                  >Что нужно привезти:</label
+                >
+                <input
+                  class="auth-form-field auth-form-field-products"
+                  type="text"
+                  id="auth-products"
+                  name="auth-products"
+                  placeholder="В свободной форме"
+                />
+              </p>
+              <div class="field-group">
+                <p class="auth-form-title">Количество:</p>
+                <div class="count-buttons">
+                  <button class="count-buttons-button button-minus"></button>
+                  <input class="count-buttons-input" placeholder="1" />
+                  <button class="count-buttons-button button-plus"></button>
+                </div>
+              </div>
+            </div>
+          </form>
+          <button class="button">отправить</button>
+        </section>
+      </div>
+    </div>
   </body>
 </html>

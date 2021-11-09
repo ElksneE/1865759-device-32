@@ -72,14 +72,14 @@
                 target="_blank"
                 >Каталог товаров</a
               >
-              <ul class="navigation-subcatalog">
+              <!-- <ul class="navigation-subcatalog">
                 <li><a href="">Виртуальная реальность</a></li>
                 <li><a href="">Моноподы для селфи</a></li>
                 <li><a href="">Экшн-камеры</a></li>
                 <li><a href="">Фитнес-браслеты</a></li>
                 <li><a href="">Умные часы</a></li>
                 <li><a href="">Квадрокоптеры</a></li>
-              </ul>
+              </ul> -->
             </li>
             <li class="navigation-item-delivery">
               <a
@@ -143,30 +143,38 @@
             <!-- Блок стоимость -->
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-subtitle">Стоимость</legend>
-              <button class="range-toggle toggle-min" type="button">
-                <span class="visually-hidden">Изменить минимальную цену.</span>
-              </button>
-              <button class="range-toggle toggle-max" type="button">
-                <span class="visually-hidden">Изменить максимальную цену.</span>
-              </button>
-              <label class="catalog-filter-label">
-                от
-                <input
-                  class="catalog-filter-input"
-                  type="number"
-                  name="min-price"
-                />
-                ₽
-              </label>
-              <label class="catalog-filter-label">
-                до
-                <input
-                  class="catalog-filter-input"
-                  type="number"
-                  name="max-price"
-                />
-                ₽
-              </label>
+              <div class="range">
+               <div class="range-scale">
+                <div class="range-bar">
+                  <button class="range-toggle toggle-min" type="button">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </button>
+                  <button class="range-toggle toggle-max" type="button">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
+                </div>
+               </div>         
+                <div class="range-wrapper-inputs">
+                  <label class="catalog-filter-label">
+                    от
+                    <input
+                      class="range-input"
+                      type="number"
+                      name="min-price"
+                    />
+                  </label>
+                  <label class="catalog-filter-label">
+                    до 5000
+                    <input
+                      class="range-input"
+                      type="number"
+                      name="max-price"
+                    />
+                  </label>
+                </div>
+              </div>
+              
+              
             </fieldset>
             <!-- Блок цвет -->
             <fieldset class="catalog-filter-group">
@@ -315,6 +323,9 @@
                     alt="Любительская селфи-палка"
                   />
                 </a>
+                <div class="button-hover">
+                  <a href="#" class="button" >Подробнее</a>
+                </div>
                 <a href="#" class="product-card-title-link">
                   <h3 class="product-card-title">
                     Любительская селфи-палка
@@ -353,6 +364,9 @@
                     alt="Непотопляемая селфи-палка"
                   />
                 </a>
+                <div class="button-hover">
+                  <a href="#" class="button" >Подробнее</a>
+                </div>
                 <a href="#" class="product-card-title-link">
                   <h3 class="product-card-title">Непотопляемая <br> селфи-палка</h3>
                 </a>
@@ -368,6 +382,9 @@
                     alt="Селфи-палка «Следуй за мной»"
                   />
                 </a>
+                <div class="button-hover">
+                  <a href="#" class="button" >Подробнее</a>
+                </div>
                 <a href="" class="product-card-title-link">
                   <h3 class="product-card-title">
                     Селфи-палка «Следуй за мной»
