@@ -166,14 +166,19 @@ legend {
 }
 .navigation-item-search-button {
   position: absolute;
-  top: -9px;
-  left: 330px;
-  z-index: -1;
+  top: 0;
+  left: 337px;
   width: 160px;
   background-color: transparent;
-  border: 2px solid #000;
-  opacity: 0;
+  border: none;
+  display: none;
+ 
 }
+.navigation-item-search-button:active{
+ display:block ;
+
+}
+
 .navigation-link-contacts:hover {
   border-bottom: 2px solid #000000;
   padding-bottom: 8px;
@@ -218,13 +223,14 @@ legend {
 .navigation-link-search:focus-within {
   outline: 2px solid #af4fff;
   border-radius: 20px;
-  outline-offset: 15px;
+  outline-offset: 10px;
   opacity: 1;
+  min-width: 486px;
 }
 .navigation-link-search:active {
   outline: 2px solid #000000;
   border-radius: 20px;
-  min-width: 516px;
+  min-width: 486px;
 }
 
 .navigation-item-login {
@@ -258,7 +264,7 @@ legend {
 .navigation-link-login:focus {
   outline: 2px solid #af4fff;
   border-radius: 20px;
-  outline-offset: 15px;
+  outline-offset: 10px;
 }
 .navigation-link-login:active {
   border: none;
@@ -286,7 +292,7 @@ legend {
 .navigation-link-compare:focus {
   outline: 2px solid #af4fff;
   border-radius: 20px;
-  outline-offset: 15px;
+  outline-offset: 10px;
 }
 .navigation-link-compare:active {
   border: none;
@@ -316,7 +322,7 @@ legend {
 .navigation-link-cart:focus {
   outline: 2px solid #af4fff;
   border-radius: 20px;
-  outline-offset: 15px;
+  outline-offset: 10px;
 }
 
 .navigation-link-cart:active {
@@ -413,16 +419,6 @@ legend {
 
 .navigation-item-contacts {
   margin-left: auto;
-}
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: none;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .slider-preview {
@@ -881,7 +877,7 @@ legend {
   width: 100%;
   height: 8px;
   background: #ffe17f;
-  top: 4px;
+  top: 25%;
   left: 0;
   z-index: -1;
 }
@@ -1214,13 +1210,16 @@ legend {
 .catalog-filter-group {
   position: relative;
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 50px;
   padding: 0;
   border: none;
 }
 .range-wrapper-inputs {
   display: flex;
-  justify-content: center;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: rgb(0, 0, 0, 0.3);
 }
 
 .catalog-filter-label {
@@ -1243,13 +1242,50 @@ legend {
   appearance: none;
   margin: 0;
 }
-
+.catalog-filter-group {
+  position: relative;
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 0;
+  border: none;
+}
+.catalog-filter-group::before {
+  position: absolute;
+  content: "";
+  top: -71px;
+  left: 0;
+  width: 201px;
+  height: 2px;
+  background-color: #000;
+}
+.catalog-filter-subtitle {
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  margin-bottom: 36px;
+}
+.catalog-filter-item {
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 21px;
+}
 .control {
   position: relative;
   display: block;
   padding-left: 36px;
 }
-
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: none;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.control-label {
+  height: 20px;
+}
 .control-mark {
   position: absolute;
   top: 0;
@@ -1257,54 +1293,86 @@ legend {
   width: 20px;
   height: 20px;
   background: #ebebeb;
-  border: 2px solid rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0, 0.5);
   border-radius: 3px;
 }
-.control:hover .control-mark {
-  border: 2px solid rgb(0, 0, 0);
+.control-label:active ~ .control-mark {
+  border: 2px solid rgb(0, 0, 0, 0.25);
 }
-.control:focus .control-mark {
-  border: 2px solid #af4fff;
-  opacity: 1;
+.control:active .control-label {
+  color: rgb(0, 0, 0, 0.25);
 }
 .control:active .control-mark {
-  border: 2px solid #000000;
-  opacity: 0.2;
+  border: 2px solid rgb(0, 0, 0, 0.25);
 }
-.control-input[type="checkbox"]:checked + .control-mark::before,
-.control-input[type="checkbox"]:checked + .control-mark::after {
+.control-input[type="checkbox"]:checked + .control-mark {
+  border: 2px solid rgb(0, 0, 0);
+}
+.control:hover .control-input[type="checkbox"]:checked ~ .control-mark::before {
+  opacity: 0.5;
+  filter: none;
+}
+.control:active
+  .control-input[type="checkbox"]:checked
+  ~ .control-mark::before {
+  opacity: 0.25;
+  filter: none;
+}
+.control:hover .control-input[type="checkbox"]:checked ~ .control-mark {
+  border: 2px solid rgb(0, 0, 0, 0.5);
+}
+.control:hover .control-input[type="checkbox"]:checked ~ .control-label {
+  color: rgb(0, 0, 0, 0.5);
+}
+.control:hover .control-mark {
+  border: 2px solid rgb(0, 0, 0, 0.5);
+}
+.control:active .control-input[type="checkbox"]:checked ~ .control-mark {
+  border: 2px solid rgb(0, 0, 0, 0.25);
+}
+.control:active .control-input[type="checkbox"] ~ .control-mark {
+  border: 2px solid rgb(0, 0, 0, 0.25);
+}
+.control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
-  top: 2px;
-  left: 5px;
+  top: 25%;
+  left: 25%;
   width: 10px;
   height: 10px;
   background-image: url(../img/icon/tick.svg);
   background-repeat: no-repeat;
   content: "";
 }
-.control-label:hover{
-  color: rgb(0, 0, 0,0.5);
-
+.control-input[type="checkbox"]:checked:focus + .control-mark {
+  border: 2px solid #af4fff;
 }
- .control > .control-label:focus {
+.control-input:focus ~ .control-mark::before {
+  filter: invert(37%) sepia(51%) saturate(2878%) hue-rotate(250deg)
+    brightness(104%) contrast(97%);
+}
+.control-input:focus ~ .control-mark {
+  border: 2px solid #af4fff;
+}
+.control-input:focus ~ .control-label {
   color: #af4fff;
+}
 
-}
-.control-label:active {
-  color: rgb(0, 0, 0, 0.2);
-}
 .control-input[type="radio"] + .control-mark {
   border-radius: 50%;
 }
 .control-input[type="radio"]:checked + .control-mark::before {
   position: absolute;
-  top: 4px;
-  left: 4px;
+  top: 25%;
+  left: 25%;
   width: 8px;
   height: 8px;
   background-color: #242424;
   border-radius: 50%;
   content: "";
+}
+control-input[type="radio"]:checked:focus + .control-mark::before {
+  filter: invert(37%) sepia(51%) saturate(2878%) hue-rotate(250deg)
+    brightness(104%) contrast(97%);
 }
 .select {
   position: relative;
@@ -1385,14 +1453,14 @@ legend {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 70px;
+  width: 69vw;
+  height: 71px;
   background: #ebebeb;
   z-index: -1;
 }
 .sorting-type {
   display: flex;
-  padding: 23px 27px 17px 70px;
+  padding: 23px 27px 14px 70px;
 }
 
 .wrapper-sorting-buttons {
@@ -1426,6 +1494,7 @@ legend {
   background-repeat: no-repeat;
   background-position: 175px center;
   appearance: none;
+  -webkit-appearance: none;
 }
 .select-control:hover {
   color: rgb(0, 0, 0, 0.6);
@@ -1461,6 +1530,9 @@ legend {
   position: relative;
   grid-column: span 2;
 }
+.product-card:hover .button-hover {
+  display: block;
+}
 .button-hover {
   position: absolute;
   display: none;
@@ -1475,9 +1547,7 @@ legend {
 .button-hover > .button:before {
   background: #ffc700;
 }
-.product-card-link:hover ~ .button-hover {
-  display: block;
-}
+
 .product-card-title-link {
   min-height: 48px;
 }
@@ -1606,28 +1676,29 @@ legend {
 }
 .footer-nav {
   display: flex;
+  justify-content: space-between;
   font-size: 18px;
   width: 458px;
   font-family: "Raleway";
   font-weight: 800;
-
   text-align: center;
   letter-spacing: 3.2px;
   text-transform: uppercase;
   margin-right: 50px;
 }
 .footer-nav-item {
-  display: block;
+ box-sizing: border-box;
   color: #ffffff;
   margin-right: 15px;
+  border: 2px solid transparent;
 }
 .footer-nav-item:last-child {
   margin-right: 0;
 }
-.footer-nav-item:hover {
+.footer-nav-item:hover {  
   color: #ffc700;
-  border-bottom: 2px solid #ffc700;
   padding-bottom: 8px;
+  border-bottom: 2px solid#ffc700;
 }
 .footer-nav-item:focus {
   color: #ffffff;
@@ -1639,7 +1710,7 @@ legend {
 .footer-nav-item:active {
   color: rgb(255, 199, 0, 0.3);
   outline: none;
-  border-radius: 0px;
+  border-radius: none;
   border-bottom: 2px solid rgb(255, 199, 0, 0.3);
 }
 .footer-tel {
@@ -1843,6 +1914,7 @@ legend {
   width: 100%;
   height: 100%;
   background: rgb(255, 255, 255, 0.8);
+  display: none;
 }
 .modal {
   margin: auto;
@@ -1985,16 +2057,4 @@ legend {
   right: 15px;
   transform: rotate(-90deg);
 }
-.auth-form-field-login {
-  position: relative;
-}
-.auth-form-field-login::before {
-  position: absolute;
-  content: "";
-  width: 13px;
-  height: 12px;
-  background-image: url(/img/icon/user.svg);
-  background-repeat: no-repeat;
-  top: 0;
-  left: 0;
-}
+
