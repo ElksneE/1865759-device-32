@@ -48,17 +48,19 @@
               </form>
             </li>
             <li class="navigation-item-login">
-              <a class="navigation-link navigation-link-login navigation-link-login-catalog" href="#" tabindex="1">
+              <a class="navigation-link navigation-link-login navigation-link-login-catalog" href="#" tabindex="0">
                 Коля Петухов
                 <span class="visually-hidden">Профиль</span>
               </a>
-              <a href="#" class="navigation-link navigation-link-loginout" tabindex="1">Выйти</a>
+            </li>
+            <li class="navigation-item-login-output">
+              <a href="#" class="navigation-link navigation-link-loginout" tabindex="0">Выйти</a>
             </li>
             <li class="navigation-item-compare">
-              <a class="navigation-link navigation-link-compare" href="#" tabindex="1">Сравнить</a>
+              <a class="navigation-link navigation-link-compare" href="#" tabindex="0">Сравнить</a>
             </li>
             <li class="navigation-item-cart">
-              <a class="navigation-link navigation-link-cart" href="#" tabindex="1">Корзина</a>
+              <a class="navigation-link navigation-link-cart" href="#" tabindex="0">Корзина</a>
               <div class="popover popover-cart">
                 <div class="popover-content">
                   <span class="visually-hidden">Корзина</span>
@@ -104,6 +106,7 @@
                 href="catalog.html"
                 target="_blank"
                 >Каталог товаров</a>
+              <div class="circle"></div>
               <div class="navigation-subcatalog-wrapper">
                 <ul class="navigation-subcatalog">
                   <li class="navigation-subcatalog-row">
@@ -167,7 +170,7 @@
 
       <section class="products-page">
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
-
+        <div style="position: absolute;height: 70px;background-color: #ebebeb;width: 100%;z-index: -1;"></div>
         <!-- Левая колонка  -->
         <div class="catalog-left-column">
           <!-- Заголовок фильтр -->
@@ -231,8 +234,7 @@
                       class="visually-hidden control-input"
                       type="checkbox"
                       name="black"
-                      checked
-                    />
+                      checked disabled>
                     <span class="control-mark"></span>
                     <span class="control-label">Черный</span>
                   </label>
