@@ -63,37 +63,37 @@
               <div class="popover popover-cart">
                 <div class="popover-content">
                   <span class="visually-hidden">Корзина</span>
-                  <ul class="cart-items-list">
-                    <li class="cart-item">
-                      <img
+                  <div class="cart-items-list">
+                      <a class="cart-item" href="#">
+                        <img
                         src="img/product/product-1.jpg"
                         width="41"
                         height="43"
-                        alt="Любительская селфи-палка"
-                      />
+                        alt="Любительская селфи-палка">
                       <p class="cart-title">
                         Любительская <br />
                         селфи-палка
                       </p>
-                    </li>
-                    <li class="cart-item">
-                      <img
+                      </a>
+                      <a class="cart-item" href="#">
+                        <img
                         src="img/product/product-2.jpg"
                         width="41"
                         height="43"
-                        alt="Любительская селфи-палка"
-                      />
+                        alt="Любительская селфи-палка">
                       <p class="cart-title">Профессиональная селфи-палка</p>
-                    </li>
-                  </ul>
+                      </a>
+                  </div>
                   <div class="cart-total-amount">
                     <div class="cart-total-count">Товаров: 2</div>
                     <div class="cart-price">Сумма: 2000 ₽</div>
                   </div>
                 </div>
-                <button class="popover-open-button button-light">
-                  Открыть корзину
-                </button>
+                <div class="popover-open-button-wrapper">
+                  <button class="popover-open-button button-light">
+                    Открыть корзину
+                  </button>
+                </div>
               </div>
             </li>
           </ul>
@@ -644,7 +644,6 @@
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Доставка под заказ</h2>
-
           <form
             class="auth-form"
             action="https://echo.htmlacademy.ru/"
@@ -688,8 +687,9 @@
                 </div>
               </div>
             </div>
+            <button class="button">отправить</button>
           </form>
-          <button class="button">отправить</button>
+          
         </section>
       </div>
     </div>
