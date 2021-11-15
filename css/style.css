@@ -105,7 +105,7 @@ legend {
 
 .main-container {
   flex-grow: 1;
-  padding-top: 37px;
+  /* padding-top: 37px; */
 }
 .container {
   width: 1200px;
@@ -133,7 +133,7 @@ legend {
   outline-offset: 10px;
 }
 .navigation {
-  width: 1041px;
+  width: 1040px;
   margin: 0 auto;
   padding-bottom: 14px;
 }
@@ -290,7 +290,6 @@ legend {
   display: block;
   padding-left: 10px;
   padding-right: 10px;
-  /* margin-left: -10px; */
 }
 .navigation-link-compare::before {
   content: url(../img/icon/compare.svg);
@@ -387,26 +386,6 @@ legend {
 .navigation-list-catalog {
   position: relative;
 }
-/* .navigation-item-catalog::before {
-  content: "";
-  position: absolute;
-  top: 25%;
-  right: -50px;
-  width: 16px;
-  height: 2px;
-  background-color: rgb(0, 0, 0, 0.2);
-}
-
-.navigation-item-catalog::after {
-  content: "";
-  position: absolute;
-  top: 25%;
-  right: -50px;
-  width: 16px;
-  height: 2px;
-  background-color: rgb(0, 0, 0, 0.2);
-  transform: rotate(-90deg);
-} */
 .navigation-item{
   padding-bottom: 8px;
 }
@@ -767,9 +746,6 @@ legend {
 .wrapper-card:hover {
   background: #ffc700;
 }
-.card-title {
-  order: 1;
-}
 
 .product-category-card:last-child {
   margin-right: 0;
@@ -795,6 +771,7 @@ legend {
 .card-title {
   font-family: "Raleway";
   font-weight: 800;
+  font-size: 18px;
   line-height: 24px;
   letter-spacing: -0.02em;
 }
@@ -961,10 +938,9 @@ legend {
   font-size: 20px;
   line-height: 23px;
   text-align: center;
-  letter-spacing: 3.2px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   margin-right: 52px;
-  padding-bottom: 8px;
 }
 .info {
   display: flex;
@@ -998,7 +974,7 @@ legend {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 510px;
+  width: 515px;
   padding-top: 42px;
 }
 .more-contact::before {
@@ -1035,11 +1011,11 @@ legend {
 }
 
 .about-description {
-  margin-bottom: 80px;
+  margin-bottom: 74px;
 }
 
 .about-description p:first-child {
-  margin-bottom: 33px;
+  margin-bottom: 30px;
 }
 .about-item {
   position: relative;
@@ -1063,9 +1039,12 @@ legend {
   margin-bottom: 32px;
 }
 .address-subtitle {
-  margin-bottom: 18px;
+  margin-bottom: 11px;
 
   font-size: 24px;
+}
+.contact-button > .button{
+  padding: 0 35px;
 }
 .mode-header {
   font-weight: bold;
@@ -1074,7 +1053,7 @@ legend {
   margin-bottom: 17px;
 }
 .contact-mode {
-  margin-bottom: 55px;
+  margin-bottom: 60px;
 }
 .subscription {
   background: #f0f0f0;
@@ -1163,7 +1142,7 @@ legend {
   width: 14px;
   height: 14px;
   top: 0;
-  left: -21px;
+  left: -40px;
   background-repeat: no-repeat;
 }
 .inner-title {
@@ -1813,10 +1792,10 @@ height: 30px;
   color: #ffffff;
   font-size: 16px;
   line-height: 19px;
-  padding: 63px 0 64px 0;
+  padding: 62px 0 64px 0;
 }
 .wrapper-footer-logo {
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 }
 .footer-logo:focus {
   outline: 2px solid #AF4FFF;
@@ -1826,7 +1805,7 @@ height: 30px;
 .footer-row {
   display: flex;
   align-items: center;
-  margin-bottom: 48px;
+  margin-bottom: 45px;
 }
 .footer-address {
   width: 265px;
@@ -2104,11 +2083,11 @@ color: #FFFFFF;
   width: 100%;
   height: 100%;
   background: rgb(255, 255, 255, 0.8);
-  /* display: none; */
+  display: none;
 }
 .modal {
   margin: auto;
-  padding: 67px 77px 80px 70px;
+  padding: 60px 68px 80px 73px;
   background-color: #ffffff;
   border: 10px solid #000000;
   box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.1);
@@ -2144,7 +2123,6 @@ color: #FFFFFF;
 }
 .auth-form {
   margin: 0;
-  margin-bottom: 54px;
 }
 .auth-form-field {
   padding: 20px;
@@ -2152,6 +2130,8 @@ color: #FFFFFF;
   color: rgb(0, 0, 0, 0.6);
   background: #f0f0f0;
   border: 0;
+  font-size: 16px;
+  line-height: 20px;
 }
 .auth-form-field-products {
   width: 560px;
@@ -2193,33 +2173,58 @@ color: #FFFFFF;
 .form-group-row {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 54px;
-}
-
-.form-group-row:last-child {
-  margin-bottom: 0;
+  margin-bottom: 43px;
 }
 .auth-form-title {
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
   letter-spacing: -0.02em;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
-.auth-form-field-login::before{
+.auth-form-title-login{
+  position: relative;
+}
+.auth-form-title-login::before{
   position: absolute;
-  content: url(../img/icon/user.svg);
+  content: url(../img/icon/user-modal.svg);
   width: 13px;
   height: 12px;
-  top: 60px;
-  right: 24px;
-  fill: #B3B3B3;
+  top: 55px;
+  right: 20px;
 }
-.modal-content > .button {
+.auth-form-title-email{
+  position: relative;
+}
+.auth-form-title-email::before{
+  position: absolute;
+  content: url(../img/icon/mail.svg);
+  width: 15px;
+  height: 12px;
+  top: 55px;
+  right: 20px;
+}
+.auth-form-title-count{
+  position: relative;
+}
+.auth-form-title-count::before{
+  position: absolute;
+  content: "i";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  height: 26px;
+  top: 0px;
+  right: 15px;
+  background: #FFE17F;
+  border-radius: 50%;
+}
+.auth-form > .button {
   background: #ffffff;
-  padding: 0 40px;
+  padding: 0 30px;
 }
-.modal-content > .button::before {
+.auth-form > .button::before {
   background: #ffc700;
 }
 .button-minus {
@@ -2299,4 +2304,7 @@ text-transform: none;
 .navigation-subcatalog-item:active {
   border: none;
   opacity: 0.3;
+}
+.slider-preview-2, .slider-preview-3{
+  display: none;
 }

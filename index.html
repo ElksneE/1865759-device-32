@@ -40,8 +40,7 @@
                   id="search"
                   placeholder="Поиск по сайту"
                   name="search"
-                  required
-                />
+                  required>
                 <button class="navigation-item-search-button" type="submit">
                   Найти
                 </button>
@@ -102,8 +101,9 @@
             <li class="navigation-link-catalog">
               <a
                 class="navigation-item navigation-item-catalog"
-                href="#"
-                target="_blank">Каталог товаров</a>
+                href="#">
+                Каталог товаров
+              </a>
               <div class="circle"></div>
               <div class="navigation-subcatalog-wrapper">
                 <ul class="navigation-subcatalog">
@@ -650,7 +650,7 @@
             method="post">
             <div class="form-group-row">
               <p class="field-group">
-                <label class="auth-form-title" for="auth-login">Ваше имя:</label>
+                <label class="auth-form-title auth-form-title-login" for="auth-login">Ваше имя:</label>
                 <input
                   class="auth-form-field auth-form-field-login"
                   type="text"
@@ -659,7 +659,7 @@
                   placeholder="Имя Фамилия"/>
               </p>
               <p class="field-group">
-                <label class="auth-form-title" for="auth-email">Ваш e-mail:</label>
+                <label class="auth-form-title auth-form-title-email " for="auth-email">Ваш e-mail:</label>
                 <input
                   class="auth-form-field auth-form-field-email"
                   type="mail"
@@ -679,7 +679,7 @@
                   placeholder="В свободной форме"/>
               </p>
               <div class="field-group">
-                <p class="auth-form-title">Количество:</p>
+                <p class="auth-form-title auth-form-title-count">Количество:</p>
                 <div class="count-buttons">
                   <button class="count-buttons-button button-minus"></button>
                   <input class="count-buttons-input" placeholder="1" />
@@ -687,7 +687,7 @@
                 </div>
               </div>
             </div>
-            <button class="button">отправить</button>
+            <button class="button" type="submit">отправить</button>
           </form>
           
         </section>
