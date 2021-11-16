@@ -32,7 +32,7 @@
           <!-- Кнопки навигации -->
           <ul class="navigation-user">
             <li class="navigation-item-search">
-              <form class="navigation-link-search" action="">
+              <form class="navigation-link-search" action="https://echo.htmlacademy.ru">
                 <label class="visually-hidden" for="search">Поиск</label>
                 <input
                   class="navigation-item-input"
@@ -105,7 +105,7 @@
                 class="navigation-item navigation-item-catalog"
                 href="#"
                 target="_blank">Каталог товаров</a>
-              <div class="circle"></div>
+              <div class="circle" tabindex="-1"></div>
               <div class="navigation-subcatalog-wrapper">
                 <ul class="navigation-subcatalog">
                   <li class="navigation-subcatalog-row">
@@ -169,7 +169,7 @@
 
       <section class="products-page">
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
-        <div class="products-page-row""></div>
+        <div class="products-page-row"></div>
         <!-- Левая колонка  -->
         <div class="catalog-left-column">
           <!-- Заголовок фильтр -->
@@ -191,6 +191,7 @@
                 <button class="range-toggle toggle-min" type="button">
                   <span class="visually-hidden">Изменить минимальную цену.</span>
                 </button>
+                <div class="range-scale-black"></div>
                 <button class="range-toggle toggle-max" type="button">
                   <span class="visually-hidden">Изменить максимальную цену.</span>
                 </button>
@@ -202,16 +203,14 @@
                   <input
                     class="range-input"
                     type="number"
-                    name="min-price"
-                  />
+                    name="min-price" tabindex="-1">
                 </label>
                 <label class="catalog-filter-label">
                   до 5000
                   <input
                     class="range-input"
                     type="number"
-                    name="max-price"
-                  />
+                    name="max-price" tabindex="-1">
                 </label>
               </div>
             </div>
@@ -328,7 +327,7 @@
                 <option value="cheap" tabindex="0"> Сначала дешёвое</option>
                 <option value="expensive" tabindex="0">Сначала дорогое</option>
               </select>
-              <button class="visually-hidden" type="submit">
+              <button class="visually-hidden" type="submit" tabindex="1">
                 Отсортировать продукты
               </button>
             </form>
@@ -349,7 +348,7 @@
           <div class="wrapper-product-list">
             <div class="product-list">
               <a href="#" class="product-card">
-                <div class="product-card-link" href="product.html">
+                <div class="product-card-link">
                   <img
                     class="product-card-image"
                     src="img/product/product-1.jpg"
@@ -359,20 +358,17 @@
                   />
                 </div>
                 <div class="button-hover">
-                  <button class="button" >Подробнее</button>
+                  <span class="button" >Подробнее</span>
                 </div>
                 <div class="product-card-title-link">
                   <h3 class="product-card-title">
                     Любительская селфи-палка
                   </h3>
                 </div>
-                <span href="#" class="product-card-price">500 ₽</span>
-
+                <span class="product-card-price">500 ₽</span>
               </a>
-  
-
               <a class="product-card" href="#">
-                <div class="product-card-link" href="product.html">
+                <div class="product-card-link" >
                   <img
                     class="product-card-image"
                     src="img/product/product-2.jpg"
@@ -382,7 +378,7 @@
                   />
                 </div>
                 <div class="button-hover">
-                  <button class="button" >Подробнее</button>
+                  <span class="button" >Подробнее</span>
                 </div>
                   
                 <div class="product-card-title-link">
@@ -394,7 +390,7 @@
               </a>
 
               <a class="product-card" href="#">
-                <div class="product-card-link" href="product.html">
+                <div class="product-card-link" >
                   <img
                     class="product-card-image"
                     src="img/product/product-3.jpg"
@@ -404,7 +400,7 @@
                   />
                 </div>
                 <div class="button-hover">
-                  <button class="button" >Подробнее</button>
+                  <span class="button" >Подробнее</span>
                 </div>
                 <div class="product-card-title-link">
                   <h3 class="product-card-title">Непотопляемая <br> селфи-палка</h3>
@@ -413,7 +409,7 @@
               </a>
 
               <a class="product-card" href="#">
-                <div class="product-card-link" href="product.html">
+                <div class="product-card-link">
                   <img
                     class="product-card-image"
                     src="img/product/product-4.jpg"
@@ -423,7 +419,7 @@
                   />
                 </div>
                 <div class="button-hover">
-                  <button class="button" >Подробнее</button>
+                  <span class="button" >Подробнее</span>
                 </div>
                 <div class="product-card-title-link">
                   <h3 class="product-card-title">
@@ -495,17 +491,17 @@
           </div>
           <ul class="footer-nav">
             <li>
-              <a class="footer-nav-item" href="#" tabindex="1">Доставка</a>
+              <a class="footer-nav-item" href="#" tabindex="0">Доставка</a>
             </li>
             <li>
-              <a class="footer-nav-item" href="#" tabindex="1"> Гарантия</a>
+              <a class="footer-nav-item" href="#" tabindex="0"> Гарантия</a>
             </li>
             <li>
-              <a class="footer-nav-item" href="#" tabindex="1">Контакты</a>
+              <a class="footer-nav-item" href="#" tabindex="0">Контакты</a>
             </li>
           </ul>
           <div class="footer-tel">
-            <a href="tel:+78128121212" tabindex="1" tabindex="1">Тел.: +7 (812) 812-12-125</a>
+            <a href="tel:+78128121212" tabindex="0">Тел.: +7 (812) 812-12-125</a>
           </div>
         </div>
         <div class="wrapper-footer-social">
@@ -513,7 +509,7 @@
             <a
               class="footer-social-item"
               href="https://www.facebook.com/htmlacademy/"
-              target="_blank" tabindex="1">
+              target="_blank" tabindex="0">
               <svg
                 width="9"
                 height="18"
@@ -527,7 +523,7 @@
             <a
               class="footer-social-item"
               href="https://www.instagram.com/htmlacademy/?hl=ru"
-              target="_blank" tabindex="1"> 
+              target="_blank" tabindex="0"> 
               <svg
                 width="16"
                 height="16"
@@ -539,7 +535,7 @@
                   fill="#444"/>
               </svg> 
             </a>
-            <a class="footer-social-item" href="#" target="_blank" tabindex="1">
+            <a class="footer-social-item" href="#" target="_blank" tabindex="0">
               <svg
                 width="15"
                 height="14"
@@ -555,7 +551,7 @@
           <a
             class="footer-icon"
             href="https://twitter.com/htmlacademy_ru"
-            target="_blank" tabindex="1">
+            target="_blank" tabindex="0">
             <svg
               width="115"
               height="33"

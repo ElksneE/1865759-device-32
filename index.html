@@ -18,7 +18,7 @@
     <header class="header">
       <div class="header-inner">
         <div class="wrapper-header-logo">
-          <a class="header-logo">
+          <a class="header-logo" href="/index.html">
             <img
               src="img/logo/logo-main.svg"
               width="145"
@@ -32,7 +32,7 @@
           <!-- Кнопки навигации -->
           <ul class="navigation-user">
             <li class="navigation-item-search">
-              <form class="navigation-link-search" action="">
+              <form class="navigation-link-search" action="https://echo.htmlacademy.ru/" method="get">
                 <label class="visually-hidden" for="search">Поиск</label>
                 <input
                   class="navigation-item-input"
@@ -74,6 +74,11 @@
                         селфи-палка
                       </p>
                       </a>
+                      <span class="cart-delete">
+                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11 1L10 0L5.5 4.5L1 0L0 1L4.5 5.5L0 10L1 11L5.5 6.5L10 11L11 10L6.5 5.5L11 1Z" fill="white"/>
+                          </svg>                          
+                      </span>
                       <a class="cart-item" href="#">
                         <img
                         src="img/product/product-2.jpg"
@@ -82,6 +87,11 @@
                         alt="Любительская селфи-палка">
                       <p class="cart-title">Профессиональная селфи-палка</p>
                       </a>
+                      <span class="cart-delete">
+                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11 1L10 0L5.5 4.5L1 0L0 1L4.5 5.5L0 10L1 11L5.5 6.5L10 11L11 10L6.5 5.5L11 1Z" fill="white"/>
+                          </svg>                          
+                      </span>
                   </div>
                   <div class="cart-total-amount">
                     <div class="cart-total-count">Товаров: 2</div>
@@ -101,10 +111,10 @@
             <li class="navigation-link-catalog">
               <a
                 class="navigation-item navigation-item-catalog"
-                href="#">
+                href="/catalog.html">
                 Каталог товаров
               </a>
-              <div class="circle"></div>
+              <div class="circle" tabindex="-1"></div>
               <div class="navigation-subcatalog-wrapper">
                 <ul class="navigation-subcatalog">
                   <li class="navigation-subcatalog-row">
@@ -302,8 +312,8 @@
         <div class="container">
           <h2 class="visually-hidden">Категории товаров</h2>
           <div class="wrapper-product-category">
-            <div href="#" class="product-category-card">
-              <a href="#" class="wrapper-card">
+            <a href="#" class="product-category-card">
+              <div class="wrapper-card">
                 <img
                   class="card-img"
                   src="img/category/category-1.svg"
@@ -311,9 +321,10 @@
                   height="55"
                   alt="Виртуальная реальность"
                 />
-              </a>
-              <a href="" class="card-title">Виртуальная реальность</a>
-            </div>
+              </div>
+              <h4 class="card-title">Виртуальная реальность</h4>
+            
+            </a>
 
             <a href="/catalog.html" class="product-category-card">
               <div class="wrapper-card">
@@ -325,7 +336,7 @@
                   alt="Моноподы для селфи"
                 />
               </div>
-              <h3 href="#" class="card-title">Моноподы <br />для селфи </h3>
+              <h4 class="card-title">Моноподы <br />для селфи </h4>
             </a>
 
             <a href="#" class="product-category-card">
@@ -338,7 +349,7 @@
                   alt="Экшн-камеры"
                 />
               </div>
-              <h3 class="card-title">Экшн-камеры</h3>
+              <h4 class="card-title">Экшн-камеры</h4>
             </a>
 
             <a href="#" class="product-category-card">
@@ -351,7 +362,7 @@
                   alt="Фитнес-браслет"
                 />
               </div>
-              <h3 class="card-title">Фитнес-браслеты</h3>
+              <h4 class="card-title">Фитнес-браслеты</h4>
             </a>
 
             <a href="#" class="product-category-card">
@@ -364,7 +375,7 @@
                   alt="Умные часы"
                 />
               </div>
-              <h3 class="card-title">Умные часы</h3>
+              <h4 class="card-title">Умные часы</h4>
             </a>
 
             <a href="#" class="product-category-card">
@@ -377,7 +388,7 @@
                   alt="квадрокоптер"
                 />
               </div>
-              <h3 class="card-title">Квадрокоптеры</h3>
+              <h4 class="card-title">Квадрокоптеры</h4>
             </a>
           </div>
         </div>
@@ -507,25 +518,16 @@
             </p>
           </div>
           <div class="subscription-mail">
-            <form class="wrapper-subscription-button" action="">
-              <label class="visually-hidden" for="email">email</label>
-              <input
-                class="button-email"
-                type="email"
-                name="e-mail"
-                placeholder="Ваш e-mail"
-                id=""
-              />
+            <form class="wrapper-subscription-button" action="https://echo.htmlacademy.ru/" method="get">
+              <label class="visually-hidden" for="email">Почта</label>
+              <input class="button-email" type="email" name="e-mail" placeholder="Ваш e-mail" id="email">
 
               <label class="visually-hidden" for="submit">Подписаться</label>
               <input
                 class="button button-subscription"
                 type="submit"
-                value="Подписаться"
-                required
-              />
+                value="Подписаться">
             </form>
-
             <div class="subscription-vector">
               <p>Это бесплатно</p>
             </div>
@@ -537,23 +539,17 @@
     <footer class="footer">
       <div class="container">
         <div class="wrapper-footer-logo">
-          <a class="footer-logo">
-            <svg
-              width="145"
-              height="36"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
+          <a class="footer-logo" href="#" tabindex="0">
+            <svg width="145" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M27.2 0v35.3h-7.6v-2.4c-1.7 1.9-4.1 3.1-7.5 3.1C5.5 36 0 30.2 0 22.7 
                 0 15.2 5.5 9.4 12.1 9.4c3.4 0 5.9 1.2 7.5 3.1V0h7.6Zm-7.6 22.7c0-3.8-2.5-6.2-6-6.2s-6 
                 2.4-6 6.2c0 3.8 2.5 6.2 6 6.2 3.5-.1 6-2.4 6-6.2ZM43.7 29.2c2.1 0 3.8-.8 4.8-1.9l6.1 
                 3.5c-2.5 3.4-6.2 5.2-11 5.2-8.6 0-14-5.8-14-13.3C29.6 15.2 35 9.4 43 9.4c7.4 0 12.8 5.7 
                 12.8 13.3 0 1.1-.1 2.1-.3 3H37.6c1 2.6 3.3 3.5 6.1 3.5Zm4.6-9.1c-.8-2.9-3.1-4-5.4-4-2.9 0-4.8 1.4-5.5 4h10.9ZM82.1 10.1l-9.3 25.2h-8.6l-9.3-25.2h8.4l5.3 16 5.3-16h8.2ZM83.4 10.1H91v25.2h-7.6V10.1ZM93.6 22.7c0-7.5 5.7-13.3 13.4-13.3 4.9 0 9.2 2.6 11.4 6.5l-6.6 3.8c-.9-1.8-2.7-2.8-4.9-2.8-3.3 0-5.7 2.4-5.7 5.8 0 3.5 2.4 5.8 5.7 5.8 2.2 0 4.1-1.1 4.9-2.8l6.6 3.8C116.3 33.4 112 36 107 36c-7.7 0-13.4-5.8-13.4-13.3ZM132.8 29.2c2.1 0 3.8-.8 4.8-1.9l6.1 3.5c-2.5 3.4-6.2 5.2-11 5.2-8.6 0-14-5.8-14-13.3 0-7.5 5.5-13.3 13.4-13.3 7.4 0 12.8 5.7 12.8 13.3 0 1.1-.1 2.1-.3 3h-17.9c1 2.6 3.3 3.5 6.1 3.5Zm4.7-9.1c-.8-2.9-3.1-4-5.4-4-2.9 0-4.8 1.4-5.5 4h10.9Z"
-                fill="#FFC700"
-              />
-              <path d="M83.4 0v10.1L91 0h-7.6Z" fill="#FFC700" />
+                fill="#FFC700">
+              <path d="M83.4 0v10.1L91 0h-7.6Z" fill="#FFC700">
             </svg>
-            <!-- <img src="img/logo/logo-main.svg" width="145" height="36" alt="Логотип"> -->
           </a>
         </div>
 
@@ -563,17 +559,17 @@
           </div>
           <ul class="footer-nav">
             <li>
-              <a class="footer-nav-item" href="#" tabindex="1">Доставка</a>
+              <a class="footer-nav-item" href="#" tabindex="0">Доставка</a>
             </li>
             <li>
-              <a class="footer-nav-item" href="#" tabindex="1"> Гарантия</a>
+              <a class="footer-nav-item" href="#" tabindex="0"> Гарантия</a>
             </li>
             <li>
-              <a class="footer-nav-item" href="#" tabindex="1">Контакты</a>
+              <a class="footer-nav-item" href="#" tabindex="0">Контакты</a>
             </li>
           </ul>
           <div class="footer-tel">
-            <a href="tel:+78128121212" tabindex="1" tabindex="1">Тел.: +7 (812) 812-12-125</a>
+            <a href="tel:+78128121212" tabindex="0">Тел.: +7 (812) 812-12-125</a>
           </div>
         </div>
         <div class="wrapper-footer-social">
@@ -581,7 +577,7 @@
             <a
               class="footer-social-item"
               href="https://www.facebook.com/htmlacademy/"
-              target="_blank" tabindex="1">
+              target="_blank" tabindex="0">
               <svg
                 width="9"
                 height="18"
@@ -595,7 +591,7 @@
             <a
               class="footer-social-item"
               href="https://www.instagram.com/htmlacademy/?hl=ru"
-              target="_blank" tabindex="1"> 
+              target="_blank" tabindex="0"> 
               <svg
                 width="16"
                 height="16"
@@ -607,7 +603,7 @@
                   fill="#444"/>
               </svg> 
             </a>
-            <a class="footer-social-item" href="#" target="_blank" tabindex="1">
+            <a class="footer-social-item" href="#" target="_blank" tabindex="0">
               <svg
                 width="15"
                 height="14"
@@ -623,7 +619,7 @@
           <a
             class="footer-icon"
             href="https://twitter.com/htmlacademy_ru"
-            target="_blank" tabindex="1">
+            target="_blank" tabindex="0">
             <svg
               width="115"
               height="33"
@@ -639,59 +635,80 @@
     </footer>
     <div class="modal-container">
       <div class="modal modal-auth">
-        <button class="modal-close-button">
+        <button class="modal-close-button" onclick="document.querySelector('.modal-container').classList.add('modal-container-none')">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Доставка под заказ</h2>
+
           <form
             class="auth-form"
             action="https://echo.htmlacademy.ru/"
-            method="post">
+            method="get"
+          >
             <div class="form-group-row">
-              <p class="field-group">
-                <label class="auth-form-title auth-form-title-login" for="auth-login">Ваше имя:</label>
-                <input
-                  class="auth-form-field auth-form-field-login"
-                  type="text"
-                  id="auth-login"
-                  name="auth-login"
-                  placeholder="Имя Фамилия"/>
-              </p>
-              <p class="field-group">
-                <label class="auth-form-title auth-form-title-email " for="auth-email">Ваш e-mail:</label>
-                <input
-                  class="auth-form-field auth-form-field-email"
-                  type="mail"
-                  id="auth-email"
-                  name="auth-email"
-                  placeholder="Введите e-mail"/>
-              </p>
+              <div class="field-group">
+                  <label class="auth-form-title" for="auth-login">Ваше имя:</label>
+                  <div class="auth-form-field">
+                      <input
+                          class="auth-form-field-input auth-form-field-login"
+                          type="text"
+                          id="auth-login"
+                          name="auth-login"
+                          placeholder="Имя Фамилия"
+                      />
+                      <span class="auth-form-field-icon auth-form-field-icon-login"></span>
+                      <span class="auth-form-field-hint"></span>
+                  </div>
+              </div>
+              <div class="field-group">
+                  <label class="auth-form-title" for="auth-login">Ваш e-mail:</label>
+                  <div class="auth-form-field">
+                      <input
+                          class="auth-form-field-input auth-form-field-email"
+                          type="email"
+                          id="auth-email"
+                          name="auth-email"
+                          placeholder="E-Mail"
+                          required
+                      />
+                      <span class="auth-form-field-icon auth-form-field-icon-email"></span>
+                      <span class="auth-form-field-hint"></span>
+                  </div>
+              </div> 
             </div>
             <div class="form-group-row">
-              <p class="field-group">
-                <label class="auth-form-title" for="auth-products">Что нужно привезти:</label>
-                <input
-                  class="auth-form-field auth-form-field-products"
-                  type="text"
-                  id="auth-products"
-                  name="auth-products"
-                  placeholder="В свободной форме"/>
-              </p>
               <div class="field-group">
-                <p class="auth-form-title auth-form-title-count">Количество:</p>
+                  <label class="auth-form-title" for="auth-products">Что нужно привезти:</label>
+                  <div class="auth-form-field">
+                      <input
+                          class="auth-form-field-input-id auth-form-field-input"
+                          type="text"
+                          id="auth-products"
+                          name="auth-products"
+                          placeholder="В свободной форме">
+                  </div>
+              </div>
+              <div class="field-group">
+                <div class="auth-form-wrapper">
+                  <p class="auth-form-title ">Количество:</p>
+                  <span class="auth-form-title-count">i</span>
+                  <div class="popover popover-form">
+                    Постараемся найти, сколько нужно. Привезём сколько получится по требованиям 
+                    к провозу багажа.
+                  </div>
+                </div>
                 <div class="count-buttons">
-                  <button class="count-buttons-button button-minus"></button>
-                  <input class="count-buttons-input" placeholder="1" />
-                  <button class="count-buttons-button button-plus"></button>
+                  <button type="button" class="circle-minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+                  <input type="number" class="" placeholder="?" tabindex="-1"/>
+                  <button type="button" class="circle-plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"></button>
                 </div>
               </div>
             </div>
-            <button class="button" type="submit">отправить</button>
           </form>
-          
+          <button type="submit" class="button">отправить</button>
         </section>
       </div>
-    </div>
+  </div>
   </body>
 </html>
