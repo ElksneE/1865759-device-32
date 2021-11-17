@@ -105,7 +105,6 @@ legend {
 
 .main-container {
   flex-grow: 1;
-  /* padding-top: 37px; */
 }
 .container {
   width: 1200px;
@@ -695,7 +694,7 @@ legend {
   color: #444444;
 }
 .inner-header {
-  margin-bottom: 46px;
+  margin-bottom: 45px;
   padding-left: 58px;
 }
 
@@ -1170,6 +1169,7 @@ legend {
   font-size: 50px;
   line-height: 50px;
   margin-bottom: 23px;
+  padding-top: 35px;
 }
 
 .products-page {
@@ -1239,7 +1239,7 @@ legend {
 }
 .range-scale-black{
   height: 2px;
-  width: 95px;
+  width: 105px;
   margin-bottom: 16px;
   background: #000000;
 }
@@ -1274,7 +1274,7 @@ legend {
 
 .toggle-max {
   top: -8px;
-  right: -16px;
+  right: -18px;
 }
 
 .range-wrapper-inputs {
@@ -1290,14 +1290,16 @@ legend {
 
 .catalog-filter-label {
   display: flex;
-  margin-right: 50px;
+  margin-right: 62px;
 }
 
 .range-input {
-  width: 30px;
-  padding: 0 2px;
+  width: 50px;
   font: inherit;
-  text-align: center;
+  font-size: 15px;
+  line-height: 18px;
+  padding-left: 5px;
+  color: rgb(0, 0, 0, 0.3); 
   background-color: transparent;
   border: none;
   appearance: textfield;
@@ -1311,14 +1313,17 @@ legend {
 .catalog-filter-group {
   position: relative;
   margin: 0;
-  margin-bottom: 66px;
+  margin-bottom: 70px;
   padding: 0;
   border: none;
+}
+.catalog-filter-group:nth-child(2), .catalog-filter-group:nth-child(3){
+  margin-bottom: 30px;
 }
 .catalog-filter-group::before {
   position: absolute;
   content: "";
-  top: -71px;
+  top: -64px;
   left: 0;
   width: 201px;
   height: 2px;
@@ -1328,7 +1333,7 @@ legend {
   font-weight: 700;
   line-height: 20px;
   letter-spacing: -0.02em;
-  margin-bottom: 36px;
+  margin-bottom: 31px;
 }
 .catalog-filter-item {
   font-size: 16px;
@@ -1540,15 +1545,13 @@ legend {
   line-height: 19px;
   letter-spacing: 3.2px;
   text-transform: uppercase;
-  padding-top: 29px;
+  padding-top: 30px;
   padding-bottom: 22px;
   background: #dcdcdc;
-  padding-left: 59px;
+  padding-left: 60px;
 }
 .wrapper-catalog-filter-title {
-  /* position: relative; */
   display: flex;
-  /* width: 840px; */
   background: #ebebeb;
   z-index: 1;
   height: 70px;
@@ -1590,7 +1593,7 @@ legend {
 
 .sorting-type {
   display: flex;
-  padding: 23px 27px 14px 70px;
+  padding: 23px 27px 14px 73px;
 }
 
 .wrapper-sorting-buttons {
@@ -1840,7 +1843,7 @@ height: 30px;
   width: 265px;
   font-size: 16px;
   line-height: 19px;
-  margin-right: 95px;
+  margin-right: 100px;
 }
 .footer-nav {
   display: flex;
@@ -2517,4 +2520,21 @@ input[type=number]::-webkit-outer-spin-button{
   height: 2px;
   background-color: rgb(0, 0, 0, 0.2);
   transform: rotate(-90deg);
+}
+.auth-form-title-count:hover ~ .popover-form{
+  display:block;
+}
+.navigation-link-cart:hover ~ .popover-cart{
+  display:block;
+}
+.navigation-link-cart:focus ~ .popover-cart{
+  display:block;
+}
+.popover-open-button.button-light:focus-within::before {
+  position: absolute;
+  content: "";
+  border: 0px solid #AF4FFF;
+}
+.cart-delete:focus{
+  outline: 2px solid #af4fff;
 }
