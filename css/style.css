@@ -905,13 +905,16 @@ legend {
   left: 0;
   top: -7px;
 }
-.services-item-current:hover:before {
+.services-item-current:hover:before,
+.services-item-current:focus:before{
   background: #000000;
   width: 280px;
   height: 40px;
   left: 0;
   top: -7px;
+  transform: scaleY(1);
 }
+
 .services-item:last-child {
   margin-bottom: 0;
 }
@@ -2581,7 +2584,9 @@ input[type=number]::-webkit-outer-spin-button{
   color: #000;
   font-size: 14px;
   line-height: 17px;  
-  text-align: center;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
   background: #FFFFFF;
   border-radius: 50%;
 }
@@ -2597,7 +2602,8 @@ input[type=number]::-webkit-outer-spin-button{
   height: 22.11px;
   color: #000;
   font-size: 14px;
-  line-height: 17px;  
+  line-height: 17px; 
+  display: flex; 
   justify-content: center;
   align-items: center;
   background: #FFFFFF;
